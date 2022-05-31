@@ -8,14 +8,13 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import lombok.Getter;
-import lombok.Setter;
+
 
 /**
  *
  * @author Jonatan
  */
-@Setter @Getter
+
 @Entity
 public class Skills {
     @Id
@@ -32,6 +31,38 @@ public class Skills {
         this.idSkill = idSkill;
         this.nombreSkill = nombreSkill;
         this.nivelSkill = nivelSkill;
+        this.imgSkill = imgSkill;
+    }
+
+    public Long getIdSkill() {
+        return idSkill;
+    }
+
+    public void setIdSkill(Long idSkill) {
+        this.idSkill = idSkill;
+    }
+
+    public String getNombreSkill() {
+        return nombreSkill;
+    }
+
+    public void setNombreSkill(String nombreSkill) {
+        this.nombreSkill = nombreSkill;
+    }
+
+    public int getNivelSkill() {
+        return nivelSkill;
+    }
+
+    public void setNivelSkill(int nivelSkill) {
+        this.nivelSkill = nivelSkill;
+    }
+
+    public String getImgSkill() {
+        return imgSkill;
+    }
+
+    public void setImgSkill(String imgSkill) {
         this.imgSkill = imgSkill;
     }
     

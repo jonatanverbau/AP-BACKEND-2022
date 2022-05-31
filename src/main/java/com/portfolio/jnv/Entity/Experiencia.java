@@ -8,14 +8,11 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import lombok.Getter;
-import lombok.Setter;
-
 /**
  *
  * @author Jonatan
  */
-@Getter @Setter
+
 @Entity
 public class Experiencia {
     @Id
@@ -36,6 +33,54 @@ public class Experiencia {
         this.anioInExp = anioInExp;
         this.anioFinExp = anioFinExp;
         this.descExp = descExp;
+        this.imgExp = imgExp;
+    }
+
+    public Long getIdExp() {
+        return idExp;
+    }
+
+    public void setIdExp(Long idExp) {
+        this.idExp = idExp;
+    }
+
+    public String getNombreExp() {
+        return nombreExp;
+    }
+
+    public void setNombreExp(String nombreExp) {
+        this.nombreExp = nombreExp;
+    }
+
+    public int getAnioInExp() {
+        return anioInExp;
+    }
+
+    public void setAnioInExp(int anioInExp) {
+        this.anioInExp = anioInExp;
+    }
+
+    public int getAnioFinExp() {
+        return anioFinExp;
+    }
+
+    public void setAnioFinExp(int anioFinExp) {
+        this.anioFinExp = anioFinExp;
+    }
+
+    public String getDescExp() {
+        return descExp;
+    }
+
+    public void setDescExp(String descExp) {
+        this.descExp = descExp;
+    }
+
+    public String getImgExp() {
+        return imgExp;
+    }
+
+    public void setImgExp(String imgExp) {
         this.imgExp = imgExp;
     }
     
